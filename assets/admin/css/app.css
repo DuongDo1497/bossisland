@@ -4931,6 +4931,7 @@ th.w-85 {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 
 .sidebar__logo .sidebar__main-logo {
