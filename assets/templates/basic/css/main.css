@@ -1093,7 +1093,7 @@ body.bg--section {
 .menu-area .menu li a {
     color: #fff;
     text-transform: capitalize;
-    font-family: "Jost", sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -1572,7 +1572,7 @@ body.bg--section {
 
 .header__top__wrapper .name {
     text-transform: capitalize;
-    font-family: "Jost", sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .header__top__wrapper .search-form {
@@ -2473,6 +2473,11 @@ textarea.form--control-2 {
     padding: 20px;
     padding-top: 5px;
     padding-bottom: 30px;
+}
+
+.faq__item .faq__content p,
+.faq__item .faq__content p span{
+    font-family: 'Inter', sans-serif !important;
 }
 
 .faq__item .faq__content p:not(:last-child) {
