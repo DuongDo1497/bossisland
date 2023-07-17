@@ -99,7 +99,7 @@ class SiteController extends Controller
 
     public function blogs()
     {
-        $pageTitle      = 'Blog Posts';
+        $pageTitle      = 'News - Events';
         $emptyMessage   = 'No blog post found';
         $blogs          = Frontend::where('data_keys', 'blog.element')->latest()->paginate(getPaginate());
         $page           = Page::where('tempname',$this->activeTemplate)->where('slug','blog')->first();
@@ -110,7 +110,7 @@ class SiteController extends Controller
 
     public function blogDetails($id,$slug)
     {
-        $pageTitle = 'Blog Details';
+        $pageTitle = 'Article Details';
         $blog = Frontend::where('id',$id)->where('data_keys','blog.element')->firstOrFail();
         $recentBlogs = Frontend::where('data_keys', 'blog.element')->where('id', '!=', $blog->id)->latest()->limit(10)->get();
 
