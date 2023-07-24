@@ -23,7 +23,7 @@ class ProductController extends Controller
 
     public function products()
     {
-        $pageTitle      = request()->search_key?'Search Products':'All Products';
+        $pageTitle      = request()->search_key?'Search Products':'All Purchases';
         $emptyMessage   = 'No product found';
         $categories     = Category::with('products')->where('status', 1)->get();
 

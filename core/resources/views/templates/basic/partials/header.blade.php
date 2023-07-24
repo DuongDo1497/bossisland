@@ -42,7 +42,7 @@
             <a href="{{ route('home') }}">@lang('Home')</a>
           </li>
           <li>
-            <a href="{{ route('product.all') }}">@lang('Products')</a>
+            <a href="{{ route('product.all') }}">@lang('Purchases')</a>
           </li>
           <li>
             <a href="{{ route('merchants') }}">@lang('Merchants')</a>
